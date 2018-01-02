@@ -1,5 +1,7 @@
 module Main where
 
+import Data.Char
+
 class MyEq a where
   equals :: a -> a -> Bool
 
@@ -11,13 +13,14 @@ instance MyEq MyValue where
 t2 :: [Char]
 t2 = show $ W(2.2) `equals` W(2.2)
 
+
 test3 :: IO ()
 test3 = do
-  _ <- putStrLn "Hello, what's your name?"
-  let tmp = getLine
-  name <- tmp
-  _ <- putStrLn $ "Zis is your future: " ++ name
-  return ()
+  putStrLn "Hello, what's your name?"
+  name <- getLine
+  let upperName = map toUpper name
+  putStrLn $ "Zis is your future: " ++ upperName
+
 
 main :: IO ()
 main = do
