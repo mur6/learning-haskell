@@ -1,6 +1,6 @@
 {
     "name": "haskell-dev-container",
-    "image": "haskell:8.10",
+    "image": "haskell:8.8",
     "extensions": [
         "haskell.haskell"
     ]

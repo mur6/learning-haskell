@@ -4,18 +4,17 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a9fc7c8940182e775c547009d85a0693c9a8aad39ba53846b55e70d271bdcf11
+-- hash: 1d505a11943bec074b998ce42cfee7431aa1b49cb00547a8b56f44e91de8eb97
 
 name:           learning-haskell
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/mur6/learning-haskell/>
-homepage:       https://github.com/mur6/learning-haskell/
+homepage:       https://github.com/mur6/learning-haskell#readme
 bug-reports:    https://github.com/mur6/learning-haskell/issues
 author:         MURAKI Taichi
 maintainer:     muraki.taichi@gmail.com
 copyright:      2020 MURAKI Taichi
 license:        BSD3
-license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
@@ -28,6 +27,7 @@ source-repository head
 library
   exposed-modules:
       Lib
+      RLE
   other-modules:
       Paths_learning_haskell
   hs-source-dirs:
