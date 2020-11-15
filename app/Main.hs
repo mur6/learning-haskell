@@ -1,6 +1,12 @@
 module Main where
 
-import Lib
+import Data.List (group)
+
+rle :: String -> String
+rle = concatMap (\s -> head s : show (length s)) .group
+
+a :: Int -> Int
+a = (^2)
 
 main :: IO ()
-main = someFunc
+main = print $ rle "aaaaaaaabbbbbccccddddddd"
